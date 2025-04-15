@@ -1,12 +1,59 @@
-# React + Vite
+# Blog System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Blog System with Django & React
 
-Currently, two official plugins are available:
+A blog platform built using **Django** on the backend and an optional **React** frontend. The app integrates with the **REST Countries API** to associate each blog post with a country and display relevant details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Core Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **List Blogs** – View all blog entries with title and associated country
+- **Blog Details** – Detailed view with comments per post
+- **Search** – Filter blogs by keyword
+- **Country Info** – Country data fetched via REST Countries API
+
+---
+
+## Features
+
+- Like posts
+- Add comments
+- Advanced search/filter
+
+---
+
+## Tools Used
+
+-  **Django 4.0+** – Backend framework
+-  **React (Optional)** – Frontend UI
+-  **Python 3.8+** – Core programming language
+-  **REST Countries API** – For country data integration
+
+---
+
+## API Endpoints
+
+| Feature         | Endpoint            | Method |
+|-----------------|---------------------|--------|
+| List Posts      | `/api/posts/`       | GET    |
+| Post Detail     | `/api/posts/<id>/`  | GET    |
+| Country Data    | Auto integrated     | -      |
+
+---
+
+##  Setup Instructions
+
+### Django Backend Setup
+
+#### Requirements
+
+- Python 3.8+
+- Django 4.0+
+
+## Acknowledgments
+- [REST Countries API](https://restcountries.com/)
+- Django & DRF Documentation
+
+## Sample Display
+![Image](https://github.com/user-attachments/assets/1b26ffaf-1bde-4604-9e3b-9df934816655)
